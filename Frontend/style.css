@@ -1,0 +1,77 @@
+body {
+  font-family: Arial;
+  background: #f0f0f0;
+}
+
+.chat-container {
+  width: 90%;
+  max-width: 400px;
+  height: 550px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* CHAT AREA */
+#chat-box {
+  flex: 1;                /* 🔥 IMPORTANT */
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* INPUT AREA */
+.input-area {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.input-area button {
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+/* USER MESSAGE */
+.user-message {
+  align-self: flex-end;
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 5px 0;
+  max-width: 70%;
+}
+
+/* BOT MESSAGE */
+.bot-message {
+  align-self: flex-start;
+  background: #e5e5ea;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 5px 0;
+  max-width: 70%;
+}
+
+
+
+/* 💻 Laptop screens */
+@media (min-width: 768px) {
+  .chat-container {
+    max-width: 900px;
+    height: 600px;
+  }
+}
